@@ -4,6 +4,10 @@
       <div class="transcontent-left block-shadow"> <!--- content left --->
         <h4>{{newTransacBlock.h4}}</h4>
         <div class="content-top"> <!--- general img + name --->
+          <!-- <div class="user-transac" v-for="(persona, index) in newTransacBlock.person" :key="index">  img + name 
+            <div class="photo"><img :src="`../assets/avatar${persona.id}.png`"></div>
+            <div class="textPhoto">{{persona.name}}</div>
+          </div> -->
           <div class="user-transac"> <!--- img + name --->
             <div class="photo"><img src="../assets/avatar1.png"></div>
             <div class="textPhoto">{{newTransacBlock.namePerson1}}</div>

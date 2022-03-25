@@ -1,31 +1,31 @@
 <template>
   <section class="cards block-shadow">
     <h4>Cards</h4>
-    <div class="content-card" v-for="(cardsBlock, index) in data" :key="index">
+    <div class="content-card" >
       <div class="content-usercard">
         <div class="arrow">
-          <i :class="`${cardsBlock.logoLib} ${cardsBlock.logo}-${cardsBlock.logoLeft}`"></i>
+          <i :class="`${data.logoLib} ${data.logo}-${data.logoLeft}`"></i>
         </div>
         <div class="top-info"> <!--- Infos top --->
           <div class="card-user"> <!--- Infos card left --->
             <div class="card-account">
-              <div>{{cardsBlock.namecard}}</div>
-              <div class="premium">{{cardsBlock.statusAccount}}</div>
+              <div>{{data.namecard}}</div>
+              <div class="premium">{{data.statusAccount}}</div>
             </div>
             <div class="card-number">
-              <span>{{cardsBlock.numbercards1}}</span>
-              <span>{{cardsBlock.numbercards2}}</span>
-              <span>{{cardsBlock.numbercards2}}</span>
-              <span>{{cardsBlock.numbercards3}}</span>
+              <span>{{data.numbercards1}}</span>
+              <span>{{data.numbercards2}}</span>
+              <span>{{data.numbercards3}}</span>
+              <span>{{data.numbercards4}}</span>
             </div>
             <div class="bot-card">
               <div class="holder">
-                <div class="stats-bot-card">{{cardsBlock.cardHolder}}</div>
-                <div class="name-bot-card">{{cardsBlock.nameHolder}}</div>
+                <div class="stats-bot-card">{{data.cardHolder}}</div>
+                <div class="name-bot-card">{{data.nameHolder}}</div>
               </div>
               <div class="expire">
-                <div class="stats-bot-card">{{cardsBlock.expireDate}}</div>
-                <div class="name-bot-card">{{cardsBlock.date}}</div>
+                <div class="stats-bot-card">{{data.expireDate}}</div>
+                <div class="name-bot-card">{{data.date}}</div>
               </div>
             </div>
           </div>
@@ -37,36 +37,36 @@
                 </div>
               </div>
               <div class="stats-bar">
-                <span class="limit-text">{{cardsBlock.weeklySpendTitle}}</span>
-                <span class="weekly-numbers">{{cardsBlock.weeklySpendAmount}}</span>
+                <span class="limit-text">{{data.weeklySpendTitle}}</span>
+                <span class="weekly-numbers">{{data.weeklySpendAmount}}</span>
               </div>
             </div>
           </div>
         </div>
         <div class="arrow">
-          <i :class="`${cardsBlock.logoLib} ${cardsBlock.logo}-${cardsBlock.logoRight}`"></i>
+          <i :class="`${data.logoLib} ${data.logo}-${data.logoRight}`"></i>
         </div>
         <div class="bar-card-right"></div>
       </div>
       <div class="card-stats"> <!--- Stats card right --->
           <div class="stats-bloc">
-            <div class="balance">{{cardsBlock.balance}}</div>
-            <div class="subtitle-stats">{{cardsBlock.subBalance}}</div>
+            <div class="balance">{{data.balance}}</div>
+            <div class="subtitle-stats">{{data.subBalance}}</div>
           </div>
           <div class="stats-bloc">
-            <div class="income">{{cardsBlock.income}}</div>
-            <div class="subtitle-stats">{{cardsBlock.subIncome}}</div>
+            <div class="income">{{data.income}}</div>
+            <div class="subtitle-stats">{{data.subIncome}}</div>
           </div>
           <div class="stats-bloc">
-            <div class="outcome">{{cardsBlock.outcome}}</div>
-            <div class="subtitle-stats">{{cardsBlock.subOutcome}}</div>
+            <div class="outcome">{{data.outcome}}</div>
+            <div class="subtitle-stats">{{data.subOutcome}}</div>
           </div>
           <div class="btn-desactivate">
             <!-- <i class="bi bi-toggle-off"></i> -->
             <div class="btn-ext">
               <div class="btn-int"></div>
             </div>
-            <span class="subtitle-stats">{{cardsBlock.cardBtn}}</span>
+            <span class="subtitle-stats">{{data.cardBtn}}</span>
           </div>
       </div>
     </div>
